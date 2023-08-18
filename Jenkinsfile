@@ -16,7 +16,7 @@ pipeline {
 
         stage('Snyk'){
             steps{
-                snykSecurity failOnIssues: false, organisation: 'hex', projectName: 'Sample', snykInstallation: 'Snyk1', snykTokenId: 'Api2', targetFile: '/var/lib/jenkins/workspace/Sampletest2/package-lock.json'
+                snykSecurity failOnIssues: false, organisation: 'Hexaware NFR-Shared', projectName: 'Sample', snykInstallation: 'Snyk1', snykTokenId: 'Api2', targetFile: '/var/lib/jenkins/workspace/Sampletest2/package-lock.json'
             }
         }
      }
