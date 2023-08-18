@@ -16,7 +16,7 @@ pipeline {
 
         stage('Snyk'){
             steps{
-                snykSecurity failOnIssues: false, organisation: 'hex', projectName: 'Sample', snykInstallation: 'Snyk1', snykTokenId: 'd18895ab-63cf-472e-b2c9-738958f7baf6', targetFile: '/var/lib/jenkins/workspace/Sampletest2'
+                snykSecurity failOnIssues: false, organisation: 'hex', projectName: 'Sample', snykInstallation: 'Snyk1', snykTokenId: 'd18895ab-63cf-472e-b2c9-738958f7baf6', targetFile: '/var/lib/jenkins/workspace/Sampletest2/'
             }
         }
      }
