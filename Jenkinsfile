@@ -10,7 +10,7 @@ pipeline {
      
         stage('Dependency Track'){
             steps{
-                dependencyTrackPublisher artifact: 'broken1.json', autoCreateProjects: true, dependencyTrackApiKey: '', dependencyTrackFrontendUrl: '', dependencyTrackUrl: '', projectId: '3f28f483-d207-491d-b784-6ee5ee157ccc', synchronous: true
+                dependencyTrackPublisher artifact: 'broken1.json', autoCreateProjects: true, dependencyTrackApiKey: '', dependencyTrackFrontendUrl: '', dependencyTrackUrl: '', projectId: '3e1e5c6b-1c66-4a20-94c6-0c8267a7ef8e', synchronous: true
             }
         }
 
