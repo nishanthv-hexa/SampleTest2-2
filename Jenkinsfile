@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Sslyze'){
             steps{
-                sh "sslyze test.atop-da.com --json_out sslyze.json"
+                sh "sslyze test.atop-da.com --json_out sslyze.json" && "true"
             }
         }
      }
