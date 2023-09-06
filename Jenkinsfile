@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Clair'){
             steps{
-                sh "sudo clair-scanner -c http://localhost:6060 --ip 172.17.0.1 --report=’nodelates.json’ node:latest"
+                sh "sudo clair-scanner -c http://localhost:6060 --ip 172.17.0.1 --report=’nodelates.json’ neuralegion/brokencrystals"
             }
         }
         stage('Sslyze'){
