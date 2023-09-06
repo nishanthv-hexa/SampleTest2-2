@@ -29,7 +29,7 @@ pipeline {
                 snykSecurity failOnIssues: false, organisation: '94d1ccfd-eac2-4e0c-82ac-6d39b06b2bd1', projectName: 'Sample', snykInstallation: 'Snyk1', snykTokenId: 'Api2', targetFile: '/var/lib/jenkins/workspace/Sampletest2/package-lock.json'
             }
         }
-        Stagee('Clair'){
+        stage('Clair'){
             steps{
                 sh "clair-scanner -c http://localhost:6060 --ip 172.17.0.1 --report=’nodelates.json’ node:latest"
             }
